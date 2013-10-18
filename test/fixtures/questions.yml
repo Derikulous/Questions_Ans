@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  content: MyText
+  question: MyText
+  answer: MyText
 
 two:
-  content: MyText
+  question: MyText
+  answer: MyText
