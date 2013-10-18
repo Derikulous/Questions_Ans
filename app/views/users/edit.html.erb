@@ -1,0 +1,20 @@
+<h1>Editing user</h1>
+
+<%= form_for(@user) do |f| %><br>
+<fieldset>
+  <%= f.label :email %><br>
+  <%= f.text_field :email %>
+
+  <%= f.label :password %><br>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation, "Confirm Password" %><br>
+  <%= f.password_field :password_confirmation %>
+</fieldset>
+
+
+<div class="field">
+  <%= f.submit "Save changes" %>
+  <% end %>
+  <%= link_to 'Show', @user %> |
+  <%= link_to 'Back', users_path %>
