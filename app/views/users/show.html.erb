@@ -1,10 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<% if user_signed_in? %>
-Welcome:
-<%= current_user.email %>
-<% end %>
-
 <table>
   <tbody>
     <tr>
@@ -22,5 +17,5 @@ Welcome:
 </table>
 
 <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %> |
-<%= link_to 'Edit', edit_user_registration_path(@user) %> |
+<%= link_to 'Edit User', edit_user_registration_path(@user) %> |
 <%= link_to 'Back', users_path %>
